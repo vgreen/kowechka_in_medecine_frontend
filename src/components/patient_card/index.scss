@@ -1,0 +1,17 @@
+
+@import '../../vars';
+
+.card-wrp a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fafafa;
+    @include shadow;
+    border-radius: 10px;
+    width: 100%;
+
+    p{
+        margin-left: 40px;
+        margin-right: 40px; 
+    }
+}

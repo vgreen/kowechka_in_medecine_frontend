@@ -1,0 +1,23 @@
+@import '../../vars';
+
+
+.MainPage{
+    height: 100vh;
+    width: 100vw;
+    background: $main-pink-c;
+
+    
+    
+
+    .main_wrp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .PatientCard{
+        width: 70%;
+        margin-top: 30px;
+        
+    }
+ }  
+   

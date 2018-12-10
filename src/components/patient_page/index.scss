@@ -1,0 +1,128 @@
+@import '../../vars';
+
+$paddin: 30px;
+
+@mixin list {
+    margin-bottom: 15px;
+    width: 80%;
+    height: 320px;
+    background: white;
+    @include shadow;
+    border-radius: $roundness;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $paddin;
+
+    .title{
+        font-size: 1.4em;
+        color: $main-purpure;
+        @include font-regular;
+        margin: 0;
+    }
+
+    .chart_c{
+        height: 90%;
+        width: 100%;
+    }
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    height: 40%;
+    width: 40%;
+    color: $main-purpure;
+    background: white;
+    @include shadow;
+    border-radius: 10px;
+    font-size: 20pt;
+ 
+}
+
+.PatientPage{
+    width: 100vw;
+    background: $main-pink-c;
+    @include font-regular;
+
+    
+    .page-wrp{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 15px;
+        display: flex;
+        
+
+        
+        .patient-side{
+            height: 500px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .list{
+                @include list;
+            }
+        }
+        
+        .doc-side{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+
+            .list{
+                
+                @include list;
+
+                .input{
+                    font-size: 1.7em;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    height: 50% ;
+                    width: 100% ;
+                    border-radius: $roundness;
+                    border: 1px solid $main-purpure;
+                }
+                .submit{
+                    @include button;
+                    height: 35px;
+                    width: 30%;
+                    
+                }
+                .submit:hover{
+                    background: $main-purpure;
+                    color: white;
+                }
+            }
+        }
+        
+    }
+
+    .example-enter {
+        opacity: 0;
+        transition: all .5s ease-in;
+      }
+      
+      .example-enter.example-enter-active {
+        opacity: 1;
+      }
+      
+      .example-leave {
+        transition: all .5s ease-in;
+        opacity: 1;
+      }
+      
+      .example-leave.example-leave-active {
+        opacity: 0;
+      }
+}
+

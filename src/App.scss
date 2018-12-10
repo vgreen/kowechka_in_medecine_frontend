@@ -1,0 +1,34 @@
+@import './vars';
+
+
+
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+    height: 10%;
+    border-bottom:2px solid $main-pink-h;
+    color: $main-purpure;
+    @include font-regular;
+
+    h1{
+        @include font-regular;
+        margin: 0;
+    }
+    
+    h3{
+        @include font-regular;
+        margin-bottom: 3px;
+        margin-right: 3%;
+
+        .Link{
+            text-decoration: none;
+            
+        }
+    }
+}
+body{
+    background: $main-pink-c;
+}
